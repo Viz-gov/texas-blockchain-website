@@ -15,8 +15,8 @@
      </div>
     <nav class="nav">
       <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Divisions</a>
+      <a href="#divisions">Divisions</a>
+      <a href="#leadership">Leadership</a>
       <a href="#">Archive</a>
     </nav>
     <a href="#" class="cta-button">Join Us</a>
@@ -52,16 +52,17 @@
     <button id="prevBtn" class="carousel-btn prev-btn"> < </button>
     <button id="nextBtn" class="carousel-btn next-btn"> > </button>
   </div>
-  <div class="divisions-heading">
-    <h1>Divisions</h1>
-    <p>TXB has a breadth of talent that shine through the divisions they were selected into.
-       <!-- <br>This year, TXB has 4 divisions. -->
-    </p>
-  </div>
 
 
 
-  <section class="divisions-container">
+
+  <section id='divisions' class="divisions-container">
+    <div class="divisions-heading">
+      <h1>Divisions</h1>
+      <p>TXB has a breadth of talent that shine through the divisions they were selected into.
+         <!-- <br>This year, TXB has 4 divisions. -->
+      </p>
+    </div>
     <!-- Division: Incubator -->
     <div class="division-box incubator hidden">
       <div class="division-header incubator">
@@ -258,11 +259,13 @@
   
   <!--LEADERSHIP SECTION-->
 
-  <div class="divisions-heading">
-    <h1>Leadership</h1>
-    <p>TXB's amazing hyperstitious cyberanarchic executive team</p>
-  </div>
-  <section class="leadership-container">
+
+  <section id='leadership' class="leadership-container">
+    
+    <div class="divisions-heading">
+      <h1>Leadership</h1>
+      <p>TXB's amazing hyperstitious cyberanarchic executive team</p>
+    </div>
 
     <!-- Division: Headexec -->
     <div class="leadership-box headexec">
@@ -272,11 +275,19 @@
       <div class="leadership-portfolio headexec">
           <div class="leadership-card headexec">
             <img src="/images/savi.jpg" alt="Leader 1">
-            <h4>Savindu Wimalasooriya</h4>
+            <div class="leader-details">
+              <h4>Savindu Wimalasooriya</h4>
+              <p>Computer Science</p>
+              <p>Class of 2025</p>
+            </div>          
           </div>
           <div class="leadership-card headexec">
             <img src="/images/viren.jpg" alt="Leader 1">
-            <h4>Viren Govin</h4>
+            <div class="leader-details">
+              <h4>Viren Govin</h4>
+              <p>Management Information Systems</p>
+              <p>Class of 2025</p>
+            </div>          
           </div>
       </div>
     </div>
@@ -298,7 +309,7 @@
           </div>
           <div class="leadership-card incubator">
             <img src="/images/maanav.jpg" alt="Leader 1">
-            <h4>Maanav</h4>
+            <h4>Maanav Porwal</h4>
           </div>
       </div>
     </div>

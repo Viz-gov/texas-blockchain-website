@@ -17,6 +17,10 @@
     --font-size-3:1.4em;
   }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -598,29 +602,49 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
   gap: 20px;
   justify-items: left;
+  flex-wrap:nowrap;
+  box-sizing: border-box;
+
 }
 
 .leadership-card {
+  display: flex; /* Align image and text horizontally */
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
   background-color: var(--background-2);
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: transform 0.3s ease;
-  width: 100px; /* Fill the card width */
-  height: 100px;
+
 }
 
 .leadership-card img {
-  width: 100%; /* Fill the card width */
-  height: 100%;
+  width: 100px; /* Fill the card width */
+  height: 100px;
   object-fit: cover;
+  border-radius: 8px;
+
 }
 
-.leadership-card h4 {
-  margin: 10px 0 5px;
-  font-size: .8rem;
+.leader-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Align text to the left */
+}
+
+.leader-details h4 {
+  margin: 0;
+  font-size: 1rem;
   color: white;
+}
+
+.leader-details p {
+  margin: 2px 0; /* Reduce spacing between lines */
+  font-size: 0.9rem;
+  color: var(--secondary-white);
 }
 
 .leadership-box.incubator {
