@@ -718,3 +718,72 @@ body {
   border: 3px solid var(--headexec-color);
   box-shadow: 0 0 20px var(--headexec-color);
 }
+
+.footer {
+  background-color: var(--background-2); /* Match background theme */
+  color: var(--secondary-white);
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-left h4, .footer-center h4, .footer-right h4 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin: 5px 0;
+}
+
+.footer-center ul li a {
+  text-decoration: none;
+  color: var(--secondary-white);
+  transition: color 0.3s;
+}
+
+.footer-center ul li a:hover {
+  color: var(--call-to-action);
+}
+
+.footer-socials a {
+  margin-right: 10px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  border-top: 1px solid var(--secondary-white);
+  padding-top: 10px;
+  color: var(--secondary-white);
+}
