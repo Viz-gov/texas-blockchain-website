@@ -77,6 +77,8 @@ body {
 .header .cta-button {
     padding: 10px 20px;
     background-color: var(--call-to-action);
+    border: 3px solid var(--call-to-action-2);
+    box-shadow: 0 0 20px var(--call-to-action);
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -138,6 +140,8 @@ body {
 .hero .hero-button {
     padding: 15px 30px;
     background-color: var(--call-to-action);
+    border: 3px solid var(--call-to-action-2);
+    box-shadow: 0 0 20px var(--call-to-action);    
     color: white;
     border-radius: 5px;
     font-size: var(--font-size-2);
@@ -209,7 +213,7 @@ body {
 /* Divisions Section */
 .divisions-heading {
     margin: 50px auto;
-    padding: 20px;
+    padding: 10px;
     width: 80%; /* Align with carousel width */
     color: white; 
     text-align: center;
@@ -233,7 +237,7 @@ body {
 .divisions-container {
     margin: 50px auto;
     padding: 20px;
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr; /* Stack each division vertically */
     gap: 60px; /* Space between divisions */
@@ -320,11 +324,15 @@ body {
   .division-stats {
     display: flex;
     justify-content: space-around; /* Distribute stats horizontally */
-    margin: 10px 0;
+    gap: 10px; /* Control spacing between the stats */
+    margin: 0 auto;
+    width: 90% 90%; /* Limit width for larger left/right margins */
+    max-width: 1200px; /*Optional: Ensure it doesn't stretch too wide */
   }
   
   .stat {
-    text-align: center;
+    text-align: center; /* Ensure the text stays centered */
+    flex: 1; /* Make the items grow evenly while keeping them closer */
   }
   
   .stat h3 {
@@ -393,6 +401,27 @@ body {
   .division-portfolio {
     margin-top: 20px;
   }
+
+  .division-portfolio.incubator {
+    display: flex;
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 20px;
+    margin: 0 auto;
+    width: 80% 80%;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+
+  }
+
+  .division-portfolio.labs {
+    display: flex;
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 20px;
+    margin: 0 auto;
+    width: 80% 80%;
+    flex-wrap:nowrap;
+    box-sizing: border-box;
+  }
   
   .division-portfolio h3 {
     font-size: var(--font-size-3);
@@ -416,14 +445,15 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border: 2px solid transparent;
-    width: 150px;        /* Set a fixed width for uniformity */
-    height: 150px;       /* Set a fixed height */
-    overflow: hidden;    /* Hide any overflow */
+    width: auto;        /* Set a fixed width for uniformity */
+    height: auto;       /* Set a fixed height */
     display: flex;       /* Center images inside */
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
     margin: 10px;        /* Add spacing between cards */
-  
+    overflow: hidden;    /* Hide any overflow */
   }
   
   .project-card img {
@@ -435,16 +465,34 @@ body {
   }
   /* Individual Project Card Colors */
   .project-card.incubator {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row with gap*/
+    min-width: 250px;
     border: 3px solid var(--incubator-color);
     box-shadow: 0 0 20px var(--incubator-color);
+    width: auto;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in size */
+    display: flex;
+    text-align: center;
+    overflow: hidden;
   }
   .project-card.fund {
     border: 3px solid var(--fund-color);
     box-shadow: 0 0 20px var(--fund-color);
   }
   .project-card.labs {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row with gap*/
+    min-width: 250px;
     border: 3px solid var(--labs-color);
     box-shadow: 0 0 20px var(--labs-color);
+    width: auto;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in size */
+    display: flex;
+    text-align: center;
+    overflow: hidden;
   }
   .project-card.devops {
     border: 3px solid var(--devops-color);
@@ -454,7 +502,22 @@ body {
     font-size: var(--font-size-2);
     color: white;
     margin-bottom: 5px;
+
   }
+
+  .project-card.incubator h4 {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: white;
+  }
+
+  .project-card.incubator p {
+    margin: 0; /* Remove default margin */
+    color: var(--secondary-white);
+    line-height: 1.4; /* Improve readability */
+    word-wrap: break-word; /* Handle long words */
+  }
+
   .project-card p {
     font-size: var(--font-size-3);
     color: var(--secondary-white);
