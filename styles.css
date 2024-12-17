@@ -5,6 +5,8 @@
     --fund-color: #4fc141;
     --labs-color: #51c6ff;
     --devops-color: #cf0737;
+    --media-color: purple;
+    --headexec-color: white;
     --background: #19233c;
     --background-2: #1e2a4a;
     --secondary-white: #d1d1d1;
@@ -551,149 +553,144 @@ body {
 
 
 
+/* Leadership Section */
+.leadership-container {
+  margin: 30px auto;
+  padding: 20px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr; /* Stack each leadership division vertically */
+  gap: 40px; /* Space between leadership divisions */
+}
+
+/* Leadership Division Box */
+.leadership-box {
+  background-color: var(--background-2);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  opacity: 1;
+  transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
+}
 
 
+.leadership-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.leadership-header {
+  text-align: left; /* Left-align the division name */
+  margin-bottom: 20px;
+}
+
+.leadership-header h2 {
+  font-size: var(--font-size-2);
+  text-transform: uppercase;
+}
 
 
+/* Leadership Portfolio */
+.leadership-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-items: left;
+}
 
+.leadership-card {
+  background-color: var(--background-2);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100px; /* Fill the card width */
+  height: 100px;
+}
 
+.leadership-card img {
+  width: 100%; /* Fill the card width */
+  height: 100%;
+  object-fit: cover;
+}
 
+.leadership-card h4 {
+  margin: 10px 0 5px;
+  font-size: .8rem;
+  color: white;
+}
 
+.leadership-box.incubator {
+  border: 3px solid var(--incubator-color);
+  box-shadow: 0 0 20px var(--incubator-color);
+}
+.leadership-header.incubator {
+  color: var(--incubator-color);
+}
+.leadership-card.incubator {
+  border: 3px solid var(--incubator-color);
+  box-shadow: 0 0 20px var(--incubator-color);
+}
 
+.leadership-box.fund {
+  border: 3px solid var(--fund-color);
+  box-shadow: 0 0 20px var(--fund-color);
+}
+.leadership-header.fund {
+  color: var(--fund-color);
+}
+.leadership-card.fund {
+  border: 3px solid var(--fund-color);
+  box-shadow: 0 0 20px var(--fund-color);
+}
 
+.leadership-box.labs {
+  border: 3px solid var(--labs-color);
+  box-shadow: 0 0 20px var(--labs-color);
+}
+.leadership-header.labs {
+  color: var(--labs-color);
+}
+.leadership-card.labs {
+  border: 3px solid var(--labs-color);
+  box-shadow: 0 0 20px var(--labs-color);
+}
 
+.leadership-box.devops {
+  border: 3px solid var(--devops-color);
+  box-shadow: 0 0 20px var(--devops-color);
+}
+.leadership-header.devops {
+  color: var(--devops-color);
+}
+.leadership-card.devops {
+  border: 3px solid var(--devops-color);
+  box-shadow: 0 0 20px var(--devops-color);
+}
 
+.leadership-box.media {
+  border: 3px solid var(--media-color);
+  box-shadow: 0 0 20px var(--media-color);
+}
+.leadership-header.media {
+  color: var(--media-color);
+}
+.leadership-card.media {
+  border: 3px solid var(--media-color);
+  box-shadow: 0 0 20px var(--media-color);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Advanced Carousel Container */
-.advanced-carousel-container {
-    width: 80%;
-    margin: 50px auto;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Carousel Styling */
-  .advanced-carousel {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-  }
-  
-  .carousel-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Space between images */
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-  }
-  
-  /* Individual Images */
-  .carousel-image {
-    width: 100px; /* Smaller images size */
-    height: auto;
-    opacity: 0.5;
-    transform: scale(0.8);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .carousel-image.active {
-    width: 300px; /* Main image size */
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .carousel-image:not(.active) {
-    transform: scale(0.8); /* Scale down smaller images */
-  }
-  
-  /* Arrows */
-  .arrow {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-  .left-arrow {
-    left: 10px;
-  }
-  
-  .right-arrow {
-    right: 10px;
-  }
-  
-  .arrow:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-  }
-
-
-  .logos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 20px;
-  }
-
-  .logo:nth-child(2) {
-    transition-delay: 200ms;
-  }
-  .logo:nth-child(3) {
-    transition-delay: 400ms;
-  }
-  .logo:nth-child(4) {
-    transition-delay: 600ms;
-  }
+.leadership-box.headexec {
+  border: 3px solid var(--headexec-color);
+  box-shadow: 0 0 20px var(--headexec-color);
+}
+.leadership-header.headexec {
+  color: var(--headexec-color);
+}
+.leadership-card.headexec {
+  border: 3px solid var(--headexec-color);
+  box-shadow: 0 0 20px var(--headexec-color);
+}
