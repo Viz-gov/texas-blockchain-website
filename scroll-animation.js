@@ -33,3 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // const hiddenElements = document.querySelectorAll('.hidden');
 // hiddenElements.forEach((el) => observer.observe(el));
+
+// if you got this far this was viz
