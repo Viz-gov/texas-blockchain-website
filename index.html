@@ -8,389 +8,366 @@
   <script src="scroll-animation.js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="navbar-container">
-     <div class="logo">
-        <img src="/images/txb-logo.png">
-     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="#divisions">Divisions</a>
-      <a href="#leadership">Leadership</a>
-      <a href="archive.html">Archive</a>
-    </nav>
-    <a href="https://linktr.ee/texasblockchain" target="_blank" class="cta-button">Join Us</a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="/images/txb-logo.png" alt="Texas Blockchain Logo">
+        </a>
+      </div>
+      <div class="nav-content">
+        <nav class="nav">
+          <a href="#fund">Fund</a>
+          <a href="#labs">Labs</a>
+          <a href="#devops">DevOps</a>
+          <a href="#leadership">Team</a>
+          <a href="#leadership">Contact Us</a>
+          
+        </nav>
+      </div>
     </div>
   </header>
+
+  <!-- Hero Section -->
   <main class="hero">
-    <h1>Texas Blockchain</h1>
-    <p>TXB is a student run nonprofit 501c3 organization at The University of Texas at Austin.
-       <!-- <br>Since 2017, we've been exploring blockchain technology by educating, investing, and developing. -->
-    </p>
-    <div class="social-links">
-      <a href="https://twitter.com/txblockchain" target="_blank">
-        <img src="/images/x-logo.png" alt="X Logo">
-      </a>
-      <a href="https://instagram.com/txblockchain" target="_blank">
-        <img src="/images/instagram-logo.png" alt="Instagram Logo">
-      </a>
-      <a href="https://linkedin.com/company/texas-blockchain/mycompany" target="_blank">
-        <img src="/images/linkedin-logo.png" alt="linkedin Logo">
-      </a>
+    <div class="hero-content">
+      <!-- Left: Hero Text -->
+      <div class="hero-text">
+        <h1>Texas Blockchain</h1>
+        <br>
+        <br>
+        <br>
+        <a>Exploring blockchain technology by educating, investing, and developing.</a>
+        <br>
+        <br>
+        <br>
+        <a href="https://linktr.ee/texasblockchain" target="_blank" class="hero-button">Join us</a>
+      </div>
+  
+      <!-- Right: Carousel -->
+      <div class="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel" id="carousel">
+            <img src="/images/com2.JPEG" alt="Image 1">
+            <img src="/images/com1.JPEG" alt="Image 1">
+            <img src="/images/com3.JPEG" alt="Image 1">
+            <img src="/images/community_image2.jpg" alt="Image 2">
+            
+            <img src="/images/com4.JPEG" alt="Image 3">
+            <img src="/images/com5.JPEG" alt="Image 4">
+          </div>
+          <button id="prevBtn" class="carousel-btn prev-btn"> < </button>
+          <button id="nextBtn" class="carousel-btn next-btn"> > </button>
+        </div>
+      </div>
     </div>
-    <br>
-    <br>
-    <a href="https://linktr.ee/texasblockchain" target="_blank" class="hero-button">Join us</a>
+    
   </main>
-  <div class="carousel-container">
-    <div class="carousel" id="carousel">
-        <img src="/images/community_image1.jpg" alt="Image 1">
-        <img src="/images/community_image2.jpg" alt="Image 2">
-        <img src="/images/community_image3.jpg" alt="Image 3">
-        <img src="/images/community_image4.jpg" alt="Image 4">
-    </div>
-    <button id="prevBtn" class="carousel-btn prev-btn"> < </button>
-    <button id="nextBtn" class="carousel-btn next-btn"> > </button>
-  </div>
+  
 
-
-
-
-  <section id='divisions' class="divisions-container">
-    <div class="divisions-heading">
-      <h1>Divisions</h1>
-      <p>TXB has a breadth of talent that shine through the divisions they were selected into.
-         <!-- <br>This year, TXB has 4 divisions. -->
-      </p>
-    </div>
+  <!-- Carousel Section -->
+  
+  <br>
+  <!-- Divisions Section -->
+  <section id="fund" class="divisions-container">
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Division: Incubator -->
     <div class="division-box incubator hidden">
-      <div class="division-header incubator">
-        <h2>Incubator</h2>
-        <p>TXB Incubator focuses on helping student-led startups by providing funding, mentorship, and resources to bring their ideas to life.</p>
-      </div>
-      <div class="division-stats incubator">
-        <div class="stat">
-          <h3>10</h3>
-          <p>Startups<br>Launched</p>
-        </div>
-        <div class="stat">
-          <h3>$22.5K</h3>
-          <p>Grants<br>Given</p>
-        </div>
-        <div class="stat">
-          <h3>20</h3>
-          <p>Mentors</p>
-        </div>
-        <div class="stat">
-          <h3>15</h3>
-          <p>Workshops<br>Conducted</p>
-        </div>
-      </div>
-      <div class="division-portfolio">
-        <!-- <h3>Portfolio</h3> -->
-        <div class="portfolio-projects">
-          <div class="project-card incubator">
-            <h4>TrenchTown</h4>
-            <p> Battle Royale Trading</p>
-          </div>
-          <div class="project-card incubator">
-            <h4>Caelus</h4>
-            <p>Sustainable Fashion</p>
-          </div>
-          <div class="project-card incubator">
-            <h4>Holos</h4>
-            <p>Portfolio Manager</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Fund -->
-    <div class="division-box fund hidden">
       <div class="division-header fund">
-        <h2>Fund</h2>
+        <a>Fund</a>
         <p>In partnership with Collab Currency VC, under the DormDAO program, TXB investment fund pitches 3-4 assets every semester.</p>
-      </div>
-      <div class="division-stats fund">
-        <div class="stat">
-          <h3>$133K</h3>
-          <p>Capital Managed</p>
-        </div>
-        <div class="stat">
-          <h3>10</h3>
-          <p>Investments Made</p>
-        </div>
-        <div class="stat">
-          <h3>60%</h3>
-          <p>Annual ROI</p>
-        </div>
-        <div class="stat">
-          <h3>10</h3>
-          <p>Analysts</p>
-        </div>
-      </div>
-      <div class="division-portfolio">
-        <!-- <h3>Portfolio</h3> -->
-        <div class="portfolio-projects">
-          <div class="project-card fund">
-            <img src="/images/aioz.png">
+        <br>
+        <p>Capital Managed: <span class="green-text">133K</span></p>
+        <p>Investments Made: <span class="green-text">10</span></p>
+        <p>Annual ROI: <span class="green-text">60%</span></p>
+        <p>Analysts: <span class="green-text">9</span></p>
+
+          <div class="portfolio-projects">
+            <div class="project-card fund">
+              <img src="/images/aioz.png" alt="AIOZ">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/autonolas.png" alt="Autonolas">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/bittensor.png" alt="Bittensor">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/dmt.png" alt="DMT">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/grail.png" alt="Grail">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/maker.png" alt="Maker">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/jito.png" alt="Jito">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/ix_swap_logo.jpg" alt="IX Swap">
+            </div>
+            <div class="project-card fund">
+              <img src="/images/milady.jpg" alt="Milady">
+            </div>
           </div>
-          <div class="project-card fund">
-            <img src="/images/autonolas.png">
-          </div>
-          <div class="project-card fund">
-            <img src="/images/bittensor.png">
-          </div>
-          <div class="project-card fund">
-            <img src="/images/dmt.png">
-          </div>
-          <div class="project-card fund">
-            <img src="/images/grail.png">
-          </div>
-          <div class="project-card fund">
-            <img src="/images/maker.png">
-          </div>
-          <div class="project-card fund">
-            <img src="/images/jito.png">
-          </div>
-          <div class="project-card fund">
-            <img src="/images/ix_swap_logo.jpg">
-          </div>
-          <div class="project-card fund">
-            <img src="/images/milady.jpg">
-          </div>
+
         </div>
       </div>
     </div>
 
-    <!-- Labs -->
-    <div class="division-box labs hidden">
-        <div class="division-header labs">
-            <h2>Labs</h2>
-            <p>TXB Labs cultivates dev talent (Solidity/Rust) through internal projects & funds students to travel and compete in hackathons.</p>
-        </div>
-        <div class="division-stats labs">
-          <div class="stat">
-            <h3>$16K</h3>
-            <p>Bounties Won</p>
-          </div>
-          <div class="stat">
-            <h3>4</h3>
-            <p>Hackathons Attended</p>
-          </div>
-          <div class="stat">
-            <h3>4</h3>
-            <p>Internal Projects</p>
-          </div>
-          <div class="stat">
-            <h3>8</h3>
-            <p>Developers</p>
-          </div>
-        </div>
-        <div class="division-portfolio">
-          <!-- <h3>Portfolio</h3> -->
-          <div class="portfolio-projects">
-            <div class="project-card labs">
-              <h4>Eth Denver</h4>
-              <p>Swoosh <br>  <br> $5k bounty winner</p>
-            </div>
-            <div class="project-card labs">
-              <h4>HackFS</h4>
-              <p>CryptoClash <br>  <br> $8k bounty winner</p>
-            </div>
-            <div class="project-card labs">
-              <h4>ETH SF</h4>
-              <p>Movement <br>  <br> $3k bounty winner</p>
-            </div>
-          </div>
-        </div>
-      </div>
+ 
+    <div  class="division-box incubator hidden">
+      <div class="division-header labs">
+        <a>Labs</a>
+        <p>TXB Labs cultivates dev talent (Solidity/Rust) through internal projects & funds students to travel and compete in hackathons.</p>
+        <br>
+        <p>Bounties Won: <span class="blue-text">16K</span></p>
+        <p>Hackathons Attended: <span class="blue-text">5</span></p>
+        <p>Internal Projects: <span class="blue-text">4</span></p>
+        <p>Developers: <span class="blue-text">8</span></p>
+        
 
-    <!-- DevOps -->
-    <div class="division-box devops hidden">
-        <div class="division-header devops">
-          <h2>Devops</h2>
-          <p>TXB DevOps expands our reach into different ecosystems by setting up nodes and validators.</p>
-        </div>
-        <div class="division-stats devops">
-          <div class="stat">
-            <h3>7</h3>
-            <p>Nodes</p>
-          </div>
-          <!-- <div class="stat">
-            <h3>X</h3>
-            <p>XXXXXX XXXXXX</p>
-          </div> -->
-          <!-- <div class="stat">
-            <h3>X</h3>
-            <p>XXXXXXX XXXXXX</p>
-          </div> -->
-          <div class="stat">
-            <h3>10</h3>
-            <p>Developers</p>
-          </div>
-        </div>
-        <div class="division-portfolio">
-          <!-- <h3>Portfolio</h3> -->
-          <div class="portfolio-projects">
-            <div class="project-card devops">
-              <img src="/images/ethereum.png">
-            </div>
-            <div class="project-card devops">
-              <img src="/images/hyperliquid.png">
-            </div>
-            <div class="project-card devops">
-              <img src="/images/quai.png">
-            </div>
-            <div class="project-card devops">
-              <img src="/images/Linea-scaled.jpg">
-            </div>
-            <div class="project-card devops">
-              <img src="/images/ripple.png">
-            </div>
-            <div class="project-card devops">
-              <img src="/images/zora.png">
-            </div>
-          </div>
+      
         </div>
       </div>
-  </section>
+    </div>
+
+
+    <div class="division-box incubator hidden">
+      <div class="division-header devops">
+        <a>DevOps</a>
+        <p>TXB DevOps expands our reach into different ecosystems by setting up nodes and validators.</p>
+        <br>
+        <p>Nodes: <span class="red-text">7</span></p>
+        <p>Developers: <span class="red-text">10</span></p>
+
+         <!-- <h3>Portfolio</h3> -->
+         <div class="portfolio-projects">
+          <div class="project-card devops">
+            <img src="/images/ethereum.png" alt="Ethereum">
+          </div>
+          <div class="project-card devops">
+            <img src="/images/hyperliquid.png" alt="Hyperliquid">
+          </div>
+          <div class="project-card devops">
+            <img src="/images/quai.png" alt="Quai">
+          </div>
+          <div class="project-card devops">
+            <img src="/images/Linea-scaled.jpg" alt="Linea">
+          </div>
+          <div class="project-card devops">
+            <img src="/images/ripple.png" alt="Ripple">
+          </div>
+          <div class="project-card devops">
+            <img src="/images/zora.png" alt="Zora">
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
   
-  <!--LEADERSHIP SECTION-->
-
-
-  <section id='leadership' class="leadership-container">
+  
     
+
+    
+  <!-- Leadership Section -->
+  <section id="leadership" class="leadership-container">
     <div class="divisions-heading">
-      <h1>Leadership</h1>
+      <h1>Meet the crew</h1>
       <p>TXB's amazing hyperstitious cyberanarchic executive team</p>
     </div>
 
     <!-- Division: Headexec -->
     <div class="leadership-box headexec">
-      <div class="leadership-header headexec">
-        <h2>Pres & VP</h2>
-      </div>
-      <div class="leadership-portfolio headexec">
-          <div class="leadership-card headexec">
-            <img src="/images/savi.jpg" alt="Leader 1">
-            <div class="leader-details">
-              <h4>Savindu Wimalasooriya</h4>
-              <p>Computer Science</p>
-              <p>Class of 2025</p>
-            </div>          
-          </div>
-          <div class="leadership-card headexec">
-            <img src="/images/viren.jpg" alt="Leader 1">
-            <div class="leader-details">
-              <h4>Viren Govin</h4>
-              <p>Management Information Systems</p>
-              <p>Class of 2025</p>
-            </div>          
-          </div>
-      </div>
-    </div>
-
-
-    <!-- Division: Incubator -->
-    <div class="leadership-box incubator">
-      <div class="leadership-header incubator">
-        <h2>Incubator</h2>
-      </div>
-      <div class="leadership-portfolio incubator">
-          <div class="leadership-card incubator">
-            <img src="/images/cole.jpg" alt="Leader 1">
-            <h4>Cole Anderson</h4>
-          </div>
-          <div class="leadership-card incubator">
-            <img src="/images/harish.jpg" alt="Leader 1">
-            <h4>Harish Kolli</h4>
-          </div>
-          <div class="leadership-card incubator">
-            <img src="/images/maanav.jpg" alt="Leader 1">
-            <h4>Maanav Porwal</h4>
-          </div>
-      </div>
-    </div>
-
-
-        <!-- Division: Fund -->
-        <div class="leadership-box fund">
-          <div class="leadership-header fund">
-            <h2>Fund</h2>
-          </div>
-          <div class="leadership-portfolio fund">
-              <div class="leadership-card fund">
-                <img src="/images/arjun.jpg" alt="Leader 1">
-                <h4>Arjun Yenamandra</h4>
-              </div>
-              <div class="leadership-card fund">
-                <img src="/images/dane.jpg" alt="Leader 1">
-                <h4>Dane Kveton</h4>
-              </div>
-              <div class="leadership-card fund">
-                <img src="/images/wonjae.jpg" alt="Leader 1">
-                <h4>Wonjae Kim</h4>
-              </div>
+      <a href="https://www.linkedin.com/in/savindu-wimalasooriya/" target="_blank" class="leadership-link">
+      <section id="leadership" class="leadership-container grid-3x5">
+        <div class="leadership-card">
+          <img src="/images/savi.jpg" alt="Leader 1">
+          <div class="leader-details">
+            <h4>Savindu Wimalasooriya</h4>
+            <p class="leader-role">President</p>
+            <p class="leader-info">Computer Science</p>
+            <p class="leader-info">Class of 2025</p>
           </div>
         </div>
+      </a>
 
+      <a href="https://www.linkedin.com/in/viren-govin/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/viren.jpg" alt="Leader 2">
+          <div class="leader-details">
+            <h4>Viren Govin</h4>
+            <p class="leader-role">Vice President</p>
+            <p class="leader-info">MIS & CS</p>
+            <p class="leader-info">Class of 2025</p>
+          </div>
+        </div>
+      </a>
 
-         <!-- Division: Labs -->
-         <div class="leadership-box labs">
-          <div class="leadership-header labs">
-            <h2>Labs</h2>
+      <a href="https://www.linkedin.com/in/duaa-zulfiqar/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/duaa.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Duaa Zulfiqar</h4>
+            <p class="leader-role">Director of Media</p>
+            <p class="leader-info">Pre-Law</p>
+            <p class="leader-info">Class of 2025</p>
           </div>
-          <div class="leadership-portfolio labs">
-              <div class="leadership-card labs">
-                <img src="/images/nathan.jpg" alt="Leader 1">
-                <h4>Nathan Liow</h4>
-              </div>
-              <div class="leadership-card labs">
-                <img src="/images/sree.jpg" alt="Leader 1">
-                <h4>Sree Duggirala</h4>
-              </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/arjun423/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/arjun.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Arjun Yenamandra</h4>
+            <p class="leader-role">Director of evil shit</p>
+            <p class="leader-info">Statistics & CS</p>
+            <p class="leader-info">Class of 2026</p>
           </div>
-        </div> 
+        </div>
+      </a>
   
-         <!-- Division: DevOps -->
-         <div class="leadership-box devops">
-          <div class="leadership-header devops">
-            <h2>DevOps</h2>
+      <a href="https://www.linkedin.com/in/danekveton/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/dane.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Dane Kveton</h4>
+            <p class="leader-role">Director of Fund</p>
+            <p class="leader-info">LAH</p>
+            <p class="leader-info">Class of 2025</p>
           </div>
-          <div class="leadership-portfolio devops">
-              <div class="leadership-card devops">
-                <img src="/images/shanti.jpg" alt="Leader 1">
-                <h4>Shantikiran Chanal</h4>
-              </div>
-              <div class="leadership-card devops">
-                <img src="/images/adarsh.jpg" alt="Leader 1">
-                <h4>Adarsh Ashok</h4>
-              </div>
-          </div>
-        </div>   
+        </div>
+      </a>
 
-         <!-- Division: Media -->
-         <div class="leadership-box media">
-          <div class="leadership-header media">
-            <h2>Media</h2>
+      <a href="https://www.linkedin.com/in/kim-wonjae-jay/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/wonjae.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Wonjae Kim</h4>
+            <p class="leader-role">Head of Research</p>
+            <p class="leader-info">BS Econ & MPA</p>
+            <p class="leader-info">Class of 2027</p>
           </div>
-          <div class="leadership-portfolio media">
-              <div class="leadership-card media">
-                <img src="/images/zoe.jpg" alt="Leader 1">
-                <h4>Zoe Maknojia</h4>
-              </div>
-              <div class="leadership-card media">
-                <img src="/images/duaa.jpg" alt="Leader 1">
-                <h4>Duaa Zulfiqar</h4>
-              </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/nathanliow/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/nathan.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Nathan Liow</h4>
+            <p class="leader-role">Head of Labs</p>
+            <p class="leader-info">Computer Science</p>
+            <p class="leader-info">Class of 2027</p>
           </div>
-        </div>   
-    
-  </section>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sreevanthduggirala/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/sree.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Sree Duggirala</h4>
+            <p class="leader-role">Head of buzzballs</p>
+            <p class="leader-info">Computer Science</p>
+            <p class="leader-info">Class of 2026</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/amreen-chunara-321405242/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/amreen.jpeg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Amreen Chunara</h4>
+            <p class="leader-role">Head of Tech</p>
+            <p class="leader-info">Government</p>
+            <p class="leader-info">Class of 2027</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/shantikiran-chanal-a880641b6/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/shanti.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Shantikiran Chanal</h4>
+            <p class="leader-role">Head of jester east</p>
+            <p class="leader-info">Computer Science</p>
+            <p class="leader-info">Class of 2026</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/adarsh-ashok-40572824b/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/adarsh.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Adarsh Ashok</h4>
+            <p class="leader-role">Head of DevOps</p>
+            <p class="leader-info">Computer Science</p>
+            <p class="leader-info">Class of 2026</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/harish-kolli/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/harish.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Harish Kolli</h4>
+            <p class="leader-role">Operations</p>
+            <p class="leader-info">Business Analytics</p>
+            <p class="leader-info">Class of 2027</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/manavporwal/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/maanav.jpg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Maanav Porwal</h4>
+            <p class="leader-role">Sponsorships & Communication</p>
+            <p class="leader-info">Computer Science</p>
+            <p class="leader-info">Class of 2027</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/vinaymajjiga/" target="_blank" class="leadership-link">
+        <div class="leadership-card">
+          <img src="/images/vinaytxbimg.jpeg" alt="Leader 3">
+          <div class="leader-details">
+            <h4>Vinay Majjiga</h4>
+            <p class="leader-role">Events Coordinator</p>
+            <p class="leader-info">Economics</p>
+            <p class="leader-info">Class of 2026</p>
+          </div>
+        </div>
+      </a>
+
+
+
+        <!-- Add up to 15 cards here -->
+      </section>
+        
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
 
   <script src="carousel.js"></script>
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-left">

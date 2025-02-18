@@ -5,28 +5,33 @@ const nextBtn = document.getElementById("nextBtn");
 
 let index = 0; // Current image index
 const totalImages = images.length;
+const imageWidth = images[0].clientWidth; // Dynamically get image width
 
 function showImage(index) {
-  const offset = -index * 600; // Shift carousel by image width
+  const offset = -index * imageWidth; // Shift carousel by image width
   carousel.style.transform = `translateX(${offset}px)`;
 }
 
+// Function to automatically slide to the next image
+function autoSlide() {
+  index = (index + 1) % totalImages; // Move to the next image in a loop
+  showImage(index);
+}
+
+// Start the auto-slide (change slide every 2 seconds)
+let slideInterval = setInterval(autoSlide, 2000);
+
 prevBtn.addEventListener("click", () => {
   index = (index - 1 + totalImages) % totalImages; // Go back in a loop
-  console.log("Previous Index:", index); // Debugging
-
   showImage(index);
+  resetInterval(); // Reset auto-slide timer
 });
 
 nextBtn.addEventListener("click", () => {
   index = (index + 1) % totalImages; // Go forward in a loop
-  console.log("Next Index:", index); // Debugging
-
   showImage(index);
+  resetInterval(); // Reset auto-slide timer
 });
-
-// Start the auto-slide (change slide every 2 seconds)
-let slideInterval = setInterval(autoSlide, 2000);
 
 // Pause auto-slide on hover
 document.querySelector(".carousel-container").addEventListener("mouseenter", () => {
@@ -35,5 +40,17 @@ document.querySelector(".carousel-container").addEventListener("mouseenter", () 
 
 // Resume auto-slide when not hovering
 document.querySelector(".carousel-container").addEventListener("mouseleave", () => {
+  resetInterval();
+});
+
+// Function to reset the auto-slide interval when user clicks buttons
+function resetInterval() {
+  clearInterval(slideInterval);
   slideInterval = setInterval(autoSlide, 2000);
+}
+
+// Ensure carousel resizes correctly when window size changes
+window.addEventListener("resize", () => {
+  imageWidth = images[0].clientWidth; // Update image width dynamically
+  showImage(index); // Adjust positioning
 });
