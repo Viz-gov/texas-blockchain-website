@@ -4,7 +4,7 @@ modified = "2025-01-08T03:16:00.000Z"
 [CONTACT]
 name = "UT Fintech Research Lab"
 site = "texasblockchain.org"
-owner country = "US"
+country = "US"
 
 [VALIDATORS]
 public_key = "nHUFFKsfSYR1T314mJpFoxztThe6f8EqZmmpUWpWfCUuzQcd8uKV"
