@@ -1,0 +1,11 @@
+[VALIDATORS]
+public_key = "nHUFFKsfSYR1T314mJpFoxztThe6f8EqZmmpUWpWfCUuzQcd8uKV"
+validation_public_key = "nHUFFKsfSYR1T314mJpFoxztThe6f8EqZmmpUWpWfCUuzQcd8uKV"
+domain = "www.texasblockchain.org"
+
+[CONTACT]
+name = "Texas Blockchain"
+country = "US"
+
+[METADATA]
+modified = "2025-04-05"
