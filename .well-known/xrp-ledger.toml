@@ -1,7 +1,7 @@
 [[VALIDATORS]]
 public_key = "nHUFFKsfSYR1T314mJpFoxztThe6f8EqZmmpUWpWfCUuzQcd8uKV"
 validation_public_key = "nHUFFKsfSYR1T314mJpFoxztThe6f8EqZmmpUWpWfCUuzQcd8uKV"
-domain = "www.texasblockchain.org"
+domain = "texasblockchain.org"
 
 [CONTACT]
 name = "Texas Blockchain"
